@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15411caaac65374a92a17cf6d786e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJson: {fileID: 4900000, guid: 366a8775b2be86f4c8e757163dd07525, type: 3}
+  inkJson: {fileID: 4900000, guid: 461421b3471f29d4e80c724c112832d7, type: 3}
   dialoguePanel: {fileID: 1122247794}
   dialogueText: {fileID: 824407456}
   nameText: {fileID: 439169849}
@@ -185,7 +185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fab97448e9b9a242b62a66bf2af4527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexOfNextScene: 4
   choiceButtonPanel: {fileID: 0}
 --- !u!114 &106999481
 MonoBehaviour:
@@ -290,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0.6855345, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -833,7 +832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4376060523217880374, guid: 3016cae4f9a83fe4d9ff588f30c08083, type: 3}
+  m_Sprite: {fileID: -1416620308723056074, guid: 540e647d3ce23464b859a6ad2eaa4a22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -965,7 +964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 123, y: -215}
+  m_AnchoredPosition: {x: -80.03845, y: -82.68494}
   m_SizeDelta: {x: -971.3376, y: -940.6299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1294668209
@@ -985,7 +984,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 7
+  m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1

@@ -17,6 +17,7 @@ using TextAsset = UnityEngine.TextAsset;
 
 public class Dialogue: MonoBehaviour
 {
+    public int indexOfNextScene;
     private Story currentStory;
     private TextAsset inkJson;
     
@@ -107,8 +108,9 @@ public class Dialogue: MonoBehaviour
 
     private void ExitDialogue()
     {
+        dialoguePanel.SetActive(false);
         screenOffOn.FadeOut();
         DialoguePlay = false;
-        dialoguePanel.SetActive(false);
+        SceneManager.LoadScene(indexOfNextScene);
     }
 }
