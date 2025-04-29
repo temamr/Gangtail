@@ -17,6 +17,9 @@ using TextAsset = UnityEngine.TextAsset;
 
 public class Dialogue: MonoBehaviour
 {
+    public GameObject KunitsaCharacter;
+    public GameObject TurtleCharacter;
+    
     public int indexOfNextScene;
     private Story currentStory;
     private TextAsset inkJson;
@@ -66,6 +69,7 @@ public class Dialogue: MonoBehaviour
     {
         if (currentStory.canContinue)
         {
+            UpdateCharacter();
             ShowDialogue();
             ShowChoiceButtons();
         }
@@ -73,6 +77,17 @@ public class Dialogue: MonoBehaviour
         {
             ExitDialogue();
         }
+    }
+
+    private void UpdateCharacter()
+    {
+        var kunitsa = KunitsaCharacter.GetComponent<Character>();
+        var indexOfKunitsaEmotion = (int)currentStory.variablesState["KunitsaEmotion"];
+        kunitsa.ChangeEmotion(indexOfKunitsaEmotion);
+        
+        var turtle = TurtleCharacter.GetComponent<Character>();
+        var indexOfEmotion = (int)currentStory.variablesState["TurtleEmotion"];
+        turtle.ChangeEmotion(indexOfEmotion);
     }
 
     private void ShowDialogue()
