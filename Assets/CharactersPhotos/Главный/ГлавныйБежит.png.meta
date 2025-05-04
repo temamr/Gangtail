@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c597cb330f75ad9479c594c21191688b
+guid: 4667504e6765f4e41a74771b64fa0c51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 979172668158799580
-    second: Serious_Anime_Marten_Character_Exuding_Strength_and_Intensity_1_0
+      213: 7589493358777202458
+    second: Frame 29-Photoroom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Serious_Anime_Marten_Character_Exuding_Strength_and_Intensity_1_0
+      name: Frame 29-Photoroom_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 0
-        width: 560
-        height: 785
+        x: 8
+        y: 97
+        width: 538
+        height: 699
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cde60639a58b69d00800000000000000
-      internalID: 979172668158799580
+      spriteID: a17f91bbffb435960800000000000000
+      internalID: 7589493358777202458
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Frame 29-Photoroom_0: 7589493358777202458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

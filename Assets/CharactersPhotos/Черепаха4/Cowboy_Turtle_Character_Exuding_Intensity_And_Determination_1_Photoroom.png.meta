@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7214bdb2859643a4bb8e4f0defa645dd
+guid: 589fb41e515c4cd458cdd42032edea5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1467667408271168547
-    second: image 8-Photoroom_0
+      213: 783180339973935015
+    second: Cowboy_Turtle_Character_Exuding_Intensity_And_Determination_1_Photoroom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image 8-Photoroom_0
+      name: Cowboy_Turtle_Character_Exuding_Intensity_And_Determination_1_Photoroom_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 12
         y: 0
-        width: 562
-        height: 775
+        width: 540
+        height: 836
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddb2499a44cc1abe0800000000000000
-      internalID: -1467667408271168547
+      spriteID: 7af4737ae5a6eda00800000000000000
+      internalID: 783180339973935015
       vertices: []
       indices: 
       edges: []

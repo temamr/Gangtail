@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class Character : MonoBehaviour
 {
     public List<Sprite> emotionsList;
-    public string characterName;
 
     public void ChangeEmotion(int currentExpression)
     {

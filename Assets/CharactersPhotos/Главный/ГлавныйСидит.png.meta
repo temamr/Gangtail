@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 14b2691969350a54ba9e1bbb304a329d
+guid: 5cc315c676e978b4fa281d35f561ec0c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -911777112490673066
-    second: image 7-Photoroom_0
+      213: -4791462237556352129
+    second: Anime_Style_Illustration_Of_A_Contemplative_Marten_In_A_Suit_1_Photoroom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image 7-Photoroom_0
+      name: Anime_Style_Illustration_Of_A_Contemplative_Marten_In_A_Suit_1_Photoroom_0
       rect:
         serializedVersion: 2
-        x: 99
+        x: 0
         y: 0
-        width: 454
-        height: 780
+        width: 559
+        height: 836
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65c79a70c87b853f0800000000000000
-      internalID: -911777112490673066
+      spriteID: f7b51cf2b7e418db0800000000000000
+      internalID: -4791462237556352129
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Anime_Style_Illustration_Of_A_Contemplative_Marten_In_A_Suit_1_Photoroom_0: -4791462237556352129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
