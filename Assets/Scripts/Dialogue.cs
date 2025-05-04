@@ -11,14 +11,18 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
+using System.Threading.Tasks;
 using Zenject;
 using TextAsset = UnityEngine.TextAsset;
 
 
 public class Dialogue: MonoBehaviour
 {
+    private bool _isPrinting;
+    
     public GameObject KunitsaCharacter;
     public GameObject TurtleCharacter;
+    public MusicPlayer Music;
     
     public int indexOfNextScene;
     private Story currentStory;
@@ -69,7 +73,6 @@ public class Dialogue: MonoBehaviour
     {
         if (currentStory.canContinue)
         {
-            UpdateCharacter();
             ShowDialogue();
             ShowChoiceButtons();
         }
@@ -79,6 +82,13 @@ public class Dialogue: MonoBehaviour
         }
     }
 
+    private void UpdateMusic()
+    {
+        var indexOfMusic = (int)currentStory.variablesState["Music"];
+        Music.PlayMusic(indexOfMusic);
+        
+    }
+    
     private void UpdateCharacter()
     {
         var kunitsa = KunitsaCharacter.GetComponent<Character>();
@@ -89,11 +99,30 @@ public class Dialogue: MonoBehaviour
         var indexOfEmotion = (int)currentStory.variablesState["TurtleEmotion"];
         turtle.ChangeEmotion(indexOfEmotion);
     }
-
+    
+    async void PrintText(string text)
+    {
+        if (_isPrinting) return; // Игнорируем новый вызов
+    
+        _isPrinting = true;
+        dialogueText.text = "";
+    
+        foreach (var i in text)
+        {
+            dialogueText.text += i;
+            await Task.Delay(50);
+        }
+    
+        _isPrinting = false;
+    }
+    
     private void ShowDialogue()
     {
-        dialogueText.text = currentStory.Continue();
+        if (_isPrinting) return;
+        PrintText(currentStory.Continue());
         nameText.text = (string)currentStory.variablesState["CharacterName"];
+        UpdateCharacter();
+        UpdateMusic();
     }
 
     private void ShowChoiceButtons()

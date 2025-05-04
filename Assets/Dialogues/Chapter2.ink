@@ -1,6 +1,7 @@
 VAR CharacterName = ""
 VAR KunitsaEmotion = 0
 VAR TurtleEmotion = 0
+VAR Music = 0
 (БАМ!)
 (По тунелю прошёлся оглушительный грохот)
 (Вспышка была настолько яркой, что куницам чуть не выжгло сетчатку)
