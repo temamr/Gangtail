@@ -110,7 +110,7 @@ public class Dialogue: MonoBehaviour
         foreach (var i in text)
         {
             dialogueText.text += i;
-            await Task.Delay(50);
+            await Task.Delay(20);
         }
     
         _isPrinting = false;
