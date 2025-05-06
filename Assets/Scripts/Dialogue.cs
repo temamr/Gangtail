@@ -18,7 +18,11 @@ using TextAsset = UnityEngine.TextAsset;
 
 public class Dialogue: MonoBehaviour
 {
-    private bool _isPrinting;
+    public Image DialogueNameImage;
+    
+    public AudioClip BackGroundMisic;
+    public AudioSource audioSource;
+    private bool isPrinting;
     
     public GameObject KunitsaCharacter;
     public GameObject TurtleCharacter;
@@ -58,6 +62,9 @@ public class Dialogue: MonoBehaviour
 
     private void Start()
     {
+        audioSource.clip = BackGroundMisic;
+        audioSource.loop = true;
+        audioSource.Play();
         screenOffOn.FadeIn();
         StartDialogue();
     }
@@ -71,12 +78,12 @@ public class Dialogue: MonoBehaviour
 
     public void ContinueStory(bool choiceBefore = false)
     {
-        if (currentStory.canContinue)
+        if (!isPrinting && currentStory.canContinue)
         {
             ShowDialogue();
             ShowChoiceButtons();
         }
-        else if (!choiceBefore)
+        else if (!choiceBefore && !isPrinting)
         {
             ExitDialogue();
         }
@@ -102,9 +109,9 @@ public class Dialogue: MonoBehaviour
     
     async void PrintText(string text)
     {
-        if (_isPrinting) return; // Игнорируем новый вызов
+        if (isPrinting) return; // Игнорируем новый вызов
     
-        _isPrinting = true;
+        isPrinting = true;
         dialogueText.text = "";
     
         foreach (var i in text)
@@ -113,16 +120,21 @@ public class Dialogue: MonoBehaviour
             await Task.Delay(20);
         }
     
-        _isPrinting = false;
+        isPrinting = false;
     }
     
     private void ShowDialogue()
     {
-        if (_isPrinting) return;
-        PrintText(currentStory.Continue());
-        nameText.text = (string)currentStory.variablesState["CharacterName"];
-        UpdateCharacter();
-        UpdateMusic();
+        if (!isPrinting)
+        {
+            DialogueNameImage.enabled = true;
+            PrintText(currentStory.Continue());
+            nameText.text = (string)currentStory.variablesState["CharacterName"];
+            if (nameText.text == "")
+                DialogueNameImage.enabled = false;
+            UpdateCharacter();
+            UpdateMusic();
+        }
     }
 
     private void ShowChoiceButtons()
@@ -152,7 +164,6 @@ public class Dialogue: MonoBehaviour
 
     private void ExitDialogue()
     {
-        dialoguePanel.SetActive(false);
         screenOffOn.FadeOut();
         DialoguePlay = false;
         SceneManager.LoadScene(indexOfNextScene);
