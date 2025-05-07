@@ -14,7 +14,11 @@ public class ButtonEction: MonoBehaviour
     {
         button = GetComponent<Button>();
         dialogue = FindObjectOfType<Dialogue>();
-        clickAction = new UnityAction(() => dialogue.ChoiceButtonAction(index));
+        clickAction = new UnityAction(() =>
+        {
+            if (!dialogue.isPrinting) 
+                dialogue.ChoiceButtonAction(index);
+        });
         button.onClick.AddListener(clickAction);
     }
 }

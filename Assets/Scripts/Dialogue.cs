@@ -22,7 +22,7 @@ public class Dialogue: MonoBehaviour
     
     public AudioClip BackGroundMisic;
     public AudioSource audioSource;
-    private bool isPrinting;
+    public bool isPrinting;
     
     public GameObject KunitsaCharacter;
     public GameObject TurtleCharacter;
@@ -68,7 +68,7 @@ public class Dialogue: MonoBehaviour
         screenOffOn.FadeIn();
         StartDialogue();
     }
-
+    
     public void StartDialogue()
     {
         DialoguePlay = true;
@@ -128,8 +128,13 @@ public class Dialogue: MonoBehaviour
         if (!isPrinting)
         {
             DialogueNameImage.enabled = true;
-            PrintText(currentStory.Continue());
-            nameText.text = (string)currentStory.variablesState["CharacterName"];
+            var text = currentStory.Continue();
+            text = text.Replace("Главный", GameData.PlayerName);
+            PrintText(text);
+            var nameStr = (string)currentStory.variablesState["CharacterName"];
+            if (nameStr == "Главный")
+                nameStr = GameData.PlayerName;
+            nameText.text = nameStr;
             if (nameText.text == "")
                 DialogueNameImage.enabled = false;
             UpdateCharacter();
