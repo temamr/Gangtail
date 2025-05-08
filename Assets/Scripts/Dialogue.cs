@@ -148,7 +148,7 @@ public class Dialogue: MonoBehaviour
         choiceButtonPanel.SetActive(currentChoices.Count != 0);
         if (currentChoices.Count <= 0)
             return;
-
+        choiceButtonPanel.transform.Cast<Transform>().ToList().ForEach(t => Destroy(t.gameObject));
         for (var i = 0; i < currentChoices.Count; i++)
         {
             var choice = Instantiate(choiceButton);

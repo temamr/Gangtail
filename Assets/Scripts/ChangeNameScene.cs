@@ -18,7 +18,7 @@ public class ChangeNameScene : MonoBehaviour
 
     private void Start()
     {
-        saveTextButtonText.text = "Установить имя";
+        saveTextButtonText.text = "set name";
         ExeptionImage.enabled = false;
         if (GameData.PlayerName.Length > 0)
             Input.text = GameData.PlayerName;
@@ -37,7 +37,7 @@ public class ChangeNameScene : MonoBehaviour
 
         ExeptionImage.enabled = false;
         GameData.PlayerName = Input.text;
-        saveTextButtonText.text = "Сменить имя";
+        saveTextButtonText.text = "change name";
     }
 
     public void ChangeScene(int indexOfScene)

@@ -189,6 +189,7 @@ MonoBehaviour:
   DialogueNameImage: {fileID: 2042231056}
   BackGroundMisic: {fileID: 8300000, guid: afb1a6b6a8a51bd4faaa56c13a773720, type: 3}
   audioSource: {fileID: 1324904287}
+  isPrinting: 0
   KunitsaCharacter: {fileID: 2132438973}
   TurtleCharacter: {fileID: 7864481845745419170}
   Music: {fileID: 106999485}
@@ -996,6 +997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 7148099715352219323, guid: bf535c2ea14c2403c98bb361a5785ce4, type: 3}
+      propertyPath: m_Spacing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8511758138262567716, guid: bf535c2ea14c2403c98bb361a5785ce4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1026,7 +1031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8511758138262567716, guid: bf535c2ea14c2403c98bb361a5785ce4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -940.6299
+      value: -981.4615
       objectReference: {fileID: 0}
     - target: {fileID: 8511758138262567716, guid: bf535c2ea14c2403c98bb361a5785ce4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1062,7 +1067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8511758138262567716, guid: bf535c2ea14c2403c98bb361a5785ce4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -450
+      value: -429.58417
       objectReference: {fileID: 0}
     - target: {fileID: 8511758138262567716, guid: bf535c2ea14c2403c98bb361a5785ce4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
