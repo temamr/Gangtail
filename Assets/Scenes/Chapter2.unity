@@ -189,6 +189,7 @@ MonoBehaviour:
   DialogueNameImage: {fileID: 2042231056}
   BackGroundMisic: {fileID: 8300000, guid: 7470eec264f82454fb30cc0ca0bad263, type: 3}
   audioSource: {fileID: 1324904287}
+  isPrinting: 0
   KunitsaCharacter: {fileID: 2132438973}
   TurtleCharacter: {fileID: 7864481845745419170}
   Music: {fileID: 106999485}
@@ -291,6 +292,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c78045288b6f0384ba39bff64702f9f4, type: 3}
   - {fileID: 8300000, guid: dcb1a6426488d094ebeced847f2a13bc, type: 3}
   - {fileID: 8300000, guid: 78342a0dd480e79499101e61b46c1671, type: 3}
+  - {fileID: 8300000, guid: 59f56d0e5bec4b64e863043a7bd0e040, type: 3}
+  - {fileID: 8300000, guid: 00f833f82fa7f6542bb91ea291946069, type: 3}
   audioSource: {fileID: 842362988}
 --- !u!1 &186683973
 GameObject:
