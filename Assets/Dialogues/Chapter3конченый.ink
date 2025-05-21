@@ -37,6 +37,7 @@ VAR Music = 5
 ->END
 
 === answer2 ===
+~Music = 12
 ~KunitsaEmotion = 3
 ~CharacterName = "Главный"
 Всем приготовиться к бою!
