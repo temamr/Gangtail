@@ -18,7 +18,7 @@ public class ChangeNameScene : MonoBehaviour
 
     private void Start()
     {
-        saveTextButtonText.text = "set name";
+        saveTextButtonText.text = "Продолжить";
         ExeptionImage.enabled = false;
         if (GameData.PlayerName.Length > 0)
             Input.text = GameData.PlayerName;
@@ -34,28 +34,13 @@ public class ChangeNameScene : MonoBehaviour
             ExeptionImage.enabled = true;
             return;
         }
-
-        ExeptionImage.enabled = false;
-        GameData.PlayerName = Input.text;
-        saveTextButtonText.text = "change name";
+        
+        ChangeScene(3);
     }
 
     public void ChangeScene(int indexOfScene)
     {
-        if (GameData.PlayerName.Length <= 1)
-        {
-            ExeptionImage.enabled = true;
-            return;
-        }
-        
-        ExeptionImage.enabled = false;
         screenOffOn.FadeOut();
         SceneManager.LoadScene(indexOfScene);
-    }
-
-    public void ExitGame()
-    {
-        screenOffOn.FadeOut();
-        Application.Quit();
     }
 }
