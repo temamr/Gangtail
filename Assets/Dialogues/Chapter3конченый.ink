@@ -5,11 +5,13 @@ VAR KunitsaEmotion = 16
 VAR Music = 5
 Сквозь кашель Рикки с грустью осознал:
 ~CharacterName = "Рикки"
+~Music = 13
 Вот блин... Думали, проскользнем незаметно?
 
 ~KunitsaEmotion = 0
 ~CharacterName = ""
 ~KunitsaEmotion = 9
+~Music = 14
 Прижавшись к стене, Лекса охватил страх, он резко огляделся по сторонам.
 ~CharacterName = "Лекс"
 Нет, просто взорвали не ту стену!
