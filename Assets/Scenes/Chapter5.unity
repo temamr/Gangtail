@@ -193,7 +193,7 @@ MonoBehaviour:
   KunitsaCharacter: {fileID: 2132438973}
   TurtleCharacter: {fileID: 7864481845745419170}
   Music: {fileID: 106999485}
-  indexOfNextScene: 0
+  indexOfNextScene: 9
   choiceButtonPanel: {fileID: 0}
 --- !u!114 &106999481
 MonoBehaviour:

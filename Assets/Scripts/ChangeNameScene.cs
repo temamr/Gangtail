@@ -35,7 +35,7 @@ public class ChangeNameScene : MonoBehaviour
             return;
         }
         
-        ChangeScene(3);
+        ChangeScene(10);
     }
 
     public void ChangeScene(int indexOfScene)
