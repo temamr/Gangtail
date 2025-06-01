@@ -29,7 +29,7 @@ public class ChangeNameScene : MonoBehaviour
     
     public void SaveName()
     {
-        if (Input.text.Length == 1)
+        if (Input.text.Length == 1 || Input.text.Length > 10)
         {
             ExeptionImage.enabled = true;
             return;

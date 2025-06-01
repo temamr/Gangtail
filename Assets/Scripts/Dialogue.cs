@@ -12,6 +12,7 @@ using UnityEngine.Serialization;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 using Zenject;
 using TextAsset = UnityEngine.TextAsset;
 
@@ -41,6 +42,7 @@ public class Dialogue: MonoBehaviour
     private List<TextMeshProUGUI> choiceTextList = new List<TextMeshProUGUI>();
 
     private ScreenOffOn screenOffOn;
+    private String[] TurtleNames = new String[] { "Брок", "Рафаэль", "Билли", "Рекс", "Грыззо" };
     
     [Inject]
     public void Construct(DialoguesInstaller dialoguesInstaller)
@@ -107,31 +109,55 @@ public class Dialogue: MonoBehaviour
         turtle.ChangeEmotion(indexOfEmotion);
     }
     
-    async void PrintText(string text)
+    async void PrintText(string text, [CanBeNull] Character character)
     {
-        if (isPrinting) return; // Игнорируем новый вызов
-    
+        if (isPrinting) return;
         isPrinting = true;
         dialogueText.text = "";
     
         foreach (var i in text)
         {
+            if (character != null)
+            {
+                character.IncreaseSize();
+            }
+
             dialogueText.text += i;
             await Task.Delay(20);
         }
-    
+        
         isPrinting = false;
     }
-    
+
+    private string previouseCharacter = "-1";
     private void ShowDialogue()
     {
         if (!isPrinting)
         {
+            var kunitsa = KunitsaCharacter.GetComponent<Character>();
+            var turtle = TurtleCharacter.GetComponent<Character>();
             DialogueNameImage.enabled = true;
             var text = currentStory.Continue();
             text = text.Replace("Главный", GameData.PlayerName);
-            PrintText(text);
             var nameStr = (string)currentStory.variablesState["CharacterName"];
+            if (nameStr != previouseCharacter)
+            {
+                kunitsa.NormalizeSize();
+                turtle.NormalizeSize();
+            }
+
+            previouseCharacter = nameStr;
+            Character character = null;
+            if (TurtleNames.Contains(nameStr))
+                character = turtle;
+            else if (nameStr.Length != 0)
+                character = kunitsa;
+            
+            if (character != null)
+                PrintText(text, character);
+            else
+                PrintText(text, null);
+            
             if (nameStr == "Главный")
                 nameStr = GameData.PlayerName;
             nameText.text = nameStr;

@@ -294,6 +294,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 78342a0dd480e79499101e61b46c1671, type: 3}
   - {fileID: 8300000, guid: d7a6e8b965a6cc34882fa0d8239564ce, type: 3}
   - {fileID: 8300000, guid: 136a9c3e9fb04f94fb04d5fe07af2463, type: 3}
+  - {fileID: 8300000, guid: 59f56d0e5bec4b64e863043a7bd0e040, type: 3}
+  - {fileID: 8300000, guid: 59f56d0e5bec4b64e863043a7bd0e040, type: 3}
+  - {fileID: 8300000, guid: 00f833f82fa7f6542bb91ea291946069, type: 3}
   audioSource: {fileID: 842362988}
 --- !u!1 &186683973
 GameObject:
@@ -1772,11 +1775,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 429111255155304094, guid: 0d4b84b3e32db8c4eb4d12282c34496b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 570
+      value: 501.6
       objectReference: {fileID: 0}
     - target: {fileID: 429111255155304094, guid: 0d4b84b3e32db8c4eb4d12282c34496b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 834
+      value: 733.92
       objectReference: {fileID: 0}
     - target: {fileID: 429111255155304094, guid: 0d4b84b3e32db8c4eb4d12282c34496b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1877,11 +1880,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6025431495529313337, guid: 68a7a057aeb376a4fb385a0cb6421d3a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 570
+      value: 501.6
       objectReference: {fileID: 0}
     - target: {fileID: 6025431495529313337, guid: 68a7a057aeb376a4fb385a0cb6421d3a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 834
+      value: 733.92
       objectReference: {fileID: 0}
     - target: {fileID: 6025431495529313337, guid: 68a7a057aeb376a4fb385a0cb6421d3a, type: 3}
       propertyPath: m_LocalPosition.x

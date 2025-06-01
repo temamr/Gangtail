@@ -8,3 +8,6 @@ VAR TurtleEmotion = 0
 ~KunitsaEmotion = 13
 ДА, ГДЕ ДЕТОНАТОР? ВЗРЫВАЙ БЫСТРЕЕ!!!
 +[Взорвать]
+~KunitsaEmotion = 3
+~CharacterName = "Главный"
+Взрывай!

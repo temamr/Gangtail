@@ -11,7 +11,7 @@ VAR Music = 5
 ~KunitsaEmotion = 0
 ~CharacterName = ""
 ~KunitsaEmotion = 9
-~Music = 14
+~Music = 15
 Прижавшись к стене, Лекса охватил страх, он резко огляделся по сторонам.
 ~CharacterName = "Лекс"
 Нет, просто взорвали не ту стену!
@@ -21,6 +21,7 @@ VAR Music = 5
 Дейв, скрестив руки, стал успокаивать команду:
 ~CharacterName = "Дейв"
 Спокойно. Меган, видимо, здесь нет.
+~CharacterName = ""
 ~KunitsaEmotion = 1
 Что будем делать?
     +[Нам нужно сматываться!]
@@ -82,6 +83,7 @@ VAR Music = 5
 ~CharacterName = "Дейв"
 Нас слишком мало...
 ~TurtleEmotion = 0
+~CharacterName = ""
 Вдруг, сзади послышался шорох. Дейв бросил взгляд за спину.
 ~KunitsaEmotion = 18
 ~CharacterName = "Дейв"
