@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e15411caaac65374a92a17cf6d786e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJson: {fileID: 4900000, guid: 87e7d9851e9af4257a7908d474b0e5ea, type: 3}
+  inkJson: {fileID: 4900000, guid: eb75bf34645f01c419b4e1c44ee36e07, type: 3}
   dialoguePanel: {fileID: 1122247794}
   dialogueText: {fileID: 824407456}
   nameText: {fileID: 439169849}
@@ -193,7 +193,7 @@ MonoBehaviour:
   KunitsaCharacter: {fileID: 2132438973}
   TurtleCharacter: {fileID: 7864481845745419170}
   Music: {fileID: 106999485}
-  indexOfNextScene: 4
+  indexOfNextScene: 3
   choiceButtonPanel: {fileID: 0}
 --- !u!114 &106999481
 MonoBehaviour:
@@ -921,7 +921,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4376060523217880374, guid: 3016cae4f9a83fe4d9ff588f30c08083, type: 3}
+  m_Sprite: {fileID: 8294722561924080274, guid: 23c47746b56cd4b07a42cb3d32ad73d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

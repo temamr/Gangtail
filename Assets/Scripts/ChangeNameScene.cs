@@ -35,6 +35,7 @@ public class ChangeNameScene : MonoBehaviour
             return;
         }
         
+        GameData.PlayerName = Input.text;
         ChangeScene(10);
     }
 
