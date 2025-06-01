@@ -1,2 +1,2 @@
-# Kunitsa_vs_Cherepahi
+# GANGTAIL
 Repository for the Unity game
